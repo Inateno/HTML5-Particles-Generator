@@ -1,0 +1,38 @@
+body {
+	background-color: black;
+	margin			: 0px;
+	color			: white;
+}
+
+canvas {
+	position		: absolute;
+	left			: 10px;
+	top				: 10px;
+	border			: 1px dotted white;
+}
+
+#controls, #right, #left {
+	position		: absolute;
+	background		: rgba(200,200,200,0.2);
+	padding			: 10px;
+	color			: white;
+	border-radius	: 5px;
+	top				: 0px;
+	right			: 100px;
+	text-align		: center;
+	width			: 200px;
+}
+
+#left, #right {
+	top 			: 50px;
+	right			: -100px;
+}
+
+#right {
+	right			: 130px;
+}
+
+span, input[type=text] {
+	float : right;
+	width : 40px;
+}

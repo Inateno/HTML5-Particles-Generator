@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Particule generator</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+    <body onload="simpleExample()">
+        <canvas height="600" width="800" id="canvas">Need have a navigator more recent || Firefox || Chrome || IE9 || Opéra || Safari</canvas>
+		
+		
+		<div id="controls">
+			<b>---- Control Pannel ----</b>
+			<div id="left">
+				x Start<br />
+				<input type="range" min="0" max="800" value="400" id="XSC"/>
+				<input type="text" id="XS" value="400" /><br />
+				
+				y Start<br />
+				<input type="range" min="0" max="600" value="300" id="YSC"/>
+				<input type="text" id="YS" value="300" /><br />
+				
+				Force en x<br />
+				<input type="range" min="0" max="1000" value="500" id="XFC"/>
+				<input type="text" id="XF" value="0" /><br />
+				
+				Force en y<br />
+				<input type="range" min="0" max="1000" value="500" id="YFC"/>
+				<input type="text" id="YF" value="0" /><br />
+				
+				Force random en x<br />
+				<input type="range" min="-5" max="1000" value="100" id="XRC"/>
+				<input type="text" id="XR" value="1" /><br />
+				
+				Force random en y<br />
+				<input type="range" min="-5" max="1000" value="100" id="YRC"/>
+				<input type="text" id="YR" value="1" /><br />
+				
+				Largeur d'emission<br />
+				<input type="range" min="0" max="400" value="0" id="XEC"/>
+				<input type="text" id="XE" value="0" /><br />
+				
+				Hauteur d'emission<br />
+				<input type="range" min="0" max="400" value="0" id="YEC"/>
+				<input type="text" id="YE" value="0" /><br />
+				
+				Particules max<br />
+				<input type="range" min="0" max="1000" value="500" id="MPC"/>
+				<input type="text" id="MP" value="500" /><br />
+				
+				Opacité global<br />
+				<input type="range" min="0" max="1000" value="50" id="GOC"/>
+				<input type="text" id="GO" value="0.1" /><br />
+			</div>
+			
+			<div id="right">
+				Opacité de particule<br />
+				<input type="range" min="0" max="1000" value="50"   id="POC"/>
+				<input type="text" id="PO" value="0.5" /><br />
+				
+				Largeur max<br />
+				<input type="range" min="0" max="100" value="1"   id="PWC"/>
+				<input type="text" id="PW" value="1" /><br />
+				
+				Hauteur max<br />
+				<input type="range" min="0" max="100" value="1"   id="PHC"/>
+				<input type="text" id="PH" value="1" /><br />
+				
+				Color (RGB)<br />
+				<input type="text" id="blue" value="0" />
+				<input type="text" id="green" value="0" />
+				1 <input type="text" id="red" value="255" />
+				<br /><br />
+				
+				<input type="text" id="blue2" value="0" />
+				<input type="text" id="green2" value="0" />
+				2 <input type="text" id="red2" value="255" />
+				<br /><br />
+				
+				<input type="text" id="blue3" value="0" />
+				<input type="text" id="green3" value="0" />
+				3 <input type="text" id="red3" value="255" />
+				<br /><br />
+				
+				<input type="text" id="blue4" value="0" />
+				<input type="text" id="green4" value="0" />
+				4 <input type="text" id="red4" value="255" />
+				<br /><br />
+				
+				<input type="text" id="blue5" value="0" />
+				<input type="text" id="green5" value="0" />
+				5 <input type="text" id="red5" value="255" />
+				<br /><br />
+				
+				Random Color <input type="radio" id="anime" name="anim" value="yes"/>Yes<input type="radio" id="notAnime" name="anim" value="no" checked="checked"/>No<br />
+				Max Life <input type="text" id="MXL" value="500" /><br /><br/>
+				Min Life <input type="text" id="MNL" value="100" />
+				
+				Forme <br />
+				<select>
+					<option>Carré</option>
+					<option>Cercle</option>
+					<option>Etoile</option>
+					<option>Triangle</option>
+					<option>Hexagone</option>
+					<option>Losange</option>
+				</select>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/requestAnimationFrame.js"></script>
+		<script type="text/javascript" src="js/changeVals.js"></script>
+		<script type="text/javascript" src="js/loop.js"></script>
+    </body>
+</html>
